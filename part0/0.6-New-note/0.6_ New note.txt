@@ -1,0 +1,24 @@
+
+note left of browser: 
+write the note and click save button
+end note
+
+note over browser: 
+the event handler creates a new note and adds it to the notes list
+end note
+
+note over browser: 
+rerenders the note list on the page
+end note
+
+note over browser: 
+convert new note to json
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note right of server: 
+the sarver add the new note to the notes array
+end note
+
+server-->browser: {"message":"note created"}
